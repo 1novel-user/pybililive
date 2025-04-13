@@ -12,13 +12,13 @@
 - 运维监控：直播流稳定性监测报警
 ## 使用方法
 ### 1.下载代码、依赖
-'''
+```
 pip install time
 pip install requests
 pip install winotify
-'''
+```
 ### 2.修改参数
-'''
+```
  ROOM_ID = 1496449 #你要监控的直播间代码
  INTERVAL = 60 #查询时间间隔
  name = "双尾彗星" #你要查询的主播名称
@@ -27,7 +27,7 @@ pip install winotify
  ENABLE_WIN_TOAST = True  # 启用Windows弹窗
  微信Server酱配置（https://sct.ftqq.com）#请移步server酱获取sckey
  WECHAT_SCKEY = "" #你的SCKEY
- '''
+```
 ### 3.后台自启动
   Windows 系统
 ### 方案一：使用任务计划程序（最稳定）
@@ -52,8 +52,8 @@ pip install winotify
  "C:\你的pythonw路径\pythonw.exe" "C:\你的代码路径\watch_bili_live.py"
 ## 附：电脑端实现形式以右下角弹窗方式与一声默认提示音提醒
 ## 如想实现重复通知，可以把第71行的
-'''
+```
     toast.set_audio(audio.Default, loop=False)
-'''
+```
 ## 中"loop=False"中False改为True
 # 欢迎大佬批评建议
