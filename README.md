@@ -8,7 +8,9 @@
 
 ### **消息通知**：指定主播一旦开播，以电脑端右下角弹窗及微信通知提醒，点击即可进入直播间
 
-## 环境依赖
+## 环境依赖  
+
+### python(无需python的版本正在测试，尽情期待)
 
 ### **time、requests、winotify**
 
@@ -23,7 +25,7 @@
 
 ### 1.下载代码、依赖
 
-```
+```shell
 pip install time
 pip install requests
 pip install winotify
@@ -31,7 +33,7 @@ pip install winotify
 
 ### 2.修改参数
 
-```
+```python
  ROOM_ID = 1496449 #你要监控的直播间代码
  INTERVAL = 60 #查询时间间隔
  name = "双尾彗星" #你要查询的主播名称
@@ -50,7 +52,7 @@ pip install winotify
 
 ### 方案一：使用任务计划程序（最稳定）
 
- 创建任务基本属性,  
+** 1.创建任务基本属性：  **
 
  按 Win+R 输入:taskschd.msc  
 
@@ -58,7 +60,7 @@ pip install winotify
 
  触发器选择:当用户登录时  
 
- 配置操作  
+** 2.配置操作：  **  
 
  操作类型选择"启动程序"  
 
@@ -68,13 +70,13 @@ pip install winotify
 
  起始于：C:\你的代码地址\  
 
- 高级设置（重要）  
+** 3.高级设置(重要):  **
 
- 勾选 使用最高权限运行  
+ 勾选"使用最高权限运行"  
 
  条件标签页取消所有勾选  
 
- 设置里选择 如果任务失败，每隔1分钟重启  
+ 设置里选择"如果任务失败，每隔1分钟重启"  
 
  （建议重启后查看运行状态，如状态显示“准备就绪”，可以把触发器修改成“不管用户是否登录都要运行”）  
 
@@ -82,7 +84,7 @@ pip install winotify
 
 ### 方案二：启动文件夹（快捷方式）
 
- 创建快捷方式:  
+** 1.创建快捷方式:  **
 
  在文件资源管理器地址栏输入：shell:startup  
 
@@ -93,11 +95,14 @@ pip install winotify
 > 附：电脑端实现形式以右下角弹窗方式与一声默认提示音提醒  
 >
 > 如想实现重复通知，可以把第71行的
-
-```
-    toast.set_audio(audio.Default, loop=False)
-```
-
+> 
+>
+>```python
+>    toast.set_audio(audio.Default, loop=False)
+>```
+>
 > 中"loop=False"中False改为True
+> 
 
 # 欢迎大佬批评建议
+友情链接：[双尾彗星直播间](https://live.bilibili.com/1496449?live_from=85001&spm_id_from=333.1365.live_users.item.click)
