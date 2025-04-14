@@ -10,7 +10,7 @@
 
 ## 环境依赖  
 
-### python(无需python的版本正在测试，尽情期待)
+### python(无需python的版本正在测试，敬情期待)
 
 ### **time、requests、winotify**
 
@@ -104,5 +104,6 @@ pip install winotify
 > 中"loop=False"中False改为True
 > 
 
-# 欢迎大佬批评建议
+# 欢迎大佬批评建议，也欢迎小白随时提问
 友情链接：[双尾彗星直播间](https://live.bilibili.com/1496449?live_from=85001&spm_id_from=333.1365.live_users.item.click)
+python3.9 测试通过
