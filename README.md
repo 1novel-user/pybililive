@@ -31,17 +31,17 @@ pip install requests
 pip install winotify
 ```
 
-### 2.修改参数
+### 2.修改代码参数
 
 ```python
- ROOM_ID = 1496449 #你要监控的直播间代码
- INTERVAL = 60 #查询时间间隔
- name = "双尾彗星" #你要查询的主播名称
- #通知方式配置
- ENABLE_WECHAT = True # 启用微信提醒
- ENABLE_WIN_TOAST = True  # 启用Windows弹窗
- 微信Server酱配置（https://sct.ftqq.com）#请移步server酱获取sckey
- WECHAT_SCKEY = "" #你的SCKEY
+ ROOM_ID = 1496449 # 你要监控的直播间代码（以双尾彗星为例）
+ INTERVAL = 60 # 查询时间间隔（秒）
+ name = "双尾彗星" # 你要查询的主播名称
+ # 通知方式配置
+ ENABLE_WECHAT = True # 启用微信提醒（True 为启用）
+ ENABLE_WIN_TOAST = True  # 启用Windows弹窗（True 为启用）
+ # 微信Server酱配置（https://sct.ftqq.com）# 请移步server酱获取sckey
+ WECHAT_SCKEY = "" # 你的SCKEY
 ```
 
 ### 3.后台自启动
@@ -94,7 +94,7 @@ pip install winotify
 
 > 附：电脑端实现形式以右下角弹窗方式与一声默认提示音提醒  
 >
-> 如想实现重复通知，可以把第71行的
+> 如想实现重复提示音通知，可以把第71行的
 > 
 >
 >```python
@@ -105,5 +105,6 @@ pip install winotify
 > 
 
 # 欢迎大佬批评建议，也欢迎小白随时提问
-友情链接：[双尾彗星直播间](https://live.bilibili.com/1496449?live_from=85001&spm_id_from=333.1365.live_users.item.click)
-python3.9 测试通过
+友情链接：[双尾彗星直播间](https://live.bilibili.com/1496449?live_from=85001&spm_id_from=333.1365.live_users.item.click)  
+
+python3.9 win10/11 测试通过
